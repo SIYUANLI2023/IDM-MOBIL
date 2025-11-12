@@ -1,5 +1,3 @@
-# Rule-Based-Baseline-IDM-MOBIL
-
 # A Reproducible Rule-Based Baseline for Multi-Lane Highway Interaction: Integrating IDM, MOBIL, and Hysteretic Following
 
 ## Abstract
