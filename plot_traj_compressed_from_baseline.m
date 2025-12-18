@@ -6,7 +6,7 @@ function hFig = plot_traj_compressed_from_baseline(baseline, varargin)
 %   'y_off'   y offset (default 0) is not used in this situation.
 %   'stepE'   Ego sampling step (default 1)
 %   'stepTV'  TV sampling step (default 20)
-%   'worldX'  real-world x display range [xmin xmax] (default [0 1250])
+%   'worldX'  real-world x display range [xmin xmax] (default [0 1500])
 
 % ----------- Parse options -----------
 p = inputParser;
@@ -14,7 +14,7 @@ p.addParameter('k',7,@(x)isnumeric(x)&&isscalar(x));
 p.addParameter('y_off',0,@(x)isnumeric(x)&&isscalar(x));
 p.addParameter('stepE',1,@(x)isnumeric(x)&&isscalar(x));
 p.addParameter('stepTV',20,@(x)isnumeric(x)&&isscalar(x));
-p.addParameter('worldX',[0 1250],@(x)isnumeric(x)&&numel(x)==2);
+p.addParameter('worldX',[0 1500],@(x)isnumeric(x)&&numel(x)==2);
 p.parse(varargin{:});
 k      = p.Results.k;
 y_off  = p.Results.y_off;
@@ -147,3 +147,4 @@ function ticks = niceTicks(a,b,nTarget)
         ticks = [a b];
     end
 end
+
